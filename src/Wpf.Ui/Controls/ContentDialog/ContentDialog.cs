@@ -638,7 +638,7 @@ public class ContentDialog : ContentControl
 
         var width = desiredSize.Width - marginWidth + paddingWidth;
         var height = desiredSize.Height - marginHeight + paddingHeight;
-
+        height = Math.Max(height, 0);
         return new Size(width, height);
     }
 
